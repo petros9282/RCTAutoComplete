@@ -78,7 +78,7 @@ class RCTAutoComplete extends React.Component {
 
 RCTAutoComplete.PropTypes = {
   /**
-   * If false, disables keyboard is hidden. The default value is true.
+   * If false, keyboard is hidden. The default value is true.
    */
   showKeyboard: PropTypes.bool,
   /**
