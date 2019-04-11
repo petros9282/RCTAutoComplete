@@ -78,6 +78,10 @@ class RCTAutoComplete extends React.Component {
 
 RCTAutoComplete.PropTypes = {
   /**
+   * If false, disables keyboard is hidden. The default value is true.
+   */
+  showKeyboard: PropTypes.bool,
+  /**
    * If false, disables auto-correct. The default value is true.
    */
   autoCorrect: PropTypes.bool,
@@ -187,6 +191,7 @@ RCTAutoComplete.PropTypes = {
 };
 
 RCTAutoComplete.defaultProps = {
+  showKeyboard: true,
   autoCorrect: false,
   clearTextOnFocus: true,
   showTextFieldDropShadowWhenAutoCompleteTableIsOpen: true,

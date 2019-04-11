@@ -91,6 +91,15 @@ RCT_CUSTOM_VIEW_PROPERTY(fontFamily, NSString, AutoCompleteView)
 {
     view.font = [RCTFont updateFont:view.font withFamily:json ?: defaultView.font.familyName];
 }
+RCT_CUSTOM_VIEW_PROPERTY(showKeyboard, NSNumber, AutoCompleteView)
+{
+    BOOL shouldShowKeyboard = ((NSNumber*)json).boolValue;
+    if (shouldShowKeyboard) {
+        [view becomeFirstResponder];
+    } else {
+        [view resignFirstResponder];
+    }
+}
 RCT_EXPORT_VIEW_PROPERTY(mostRecentEventCount, NSInteger)
 
 - (UIView *) view
