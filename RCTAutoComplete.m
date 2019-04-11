@@ -109,7 +109,6 @@ RCT_EXPORT_VIEW_PROPERTY(mostRecentEventCount, NSInteger)
     searchTextField.autoCompleteDataSource = self;
     searchTextField.autoCompleteDelegate = self;    
     searchTextField.showTextFieldDropShadowWhenAutoCompleteTableIsOpen = false;
-    [searchTextField becomeFirstResponder];
     
     return searchTextField;
 }
