@@ -78,6 +78,10 @@ class RCTAutoComplete extends React.Component {
 
 RCTAutoComplete.PropTypes = {
   /**
+   * Font family for textfield
+   */
+  fontFamily: PropTypes.string,
+  /**
    * If false, keyboard is hidden. The default value is true.
    */
   showKeyboard: PropTypes.bool,
@@ -191,6 +195,7 @@ RCTAutoComplete.PropTypes = {
 };
 
 RCTAutoComplete.defaultProps = {
+  fontFamily: "Helvetica Neue",
   showKeyboard: true,
   autoCorrect: false,
   clearTextOnFocus: true,
